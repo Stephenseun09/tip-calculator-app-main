@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Stephen Arogundade">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./scss/main.css" />
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo" />
+  </header>
+  <main>
+    <div class="container">
+      <!-- ----Left---- -->
+      <div class="left">
+        <div class="wrapper1">
+          <label for="number">Bill</label>
+          <div class="input-wrap">
+            <input value="" class="input-box" type="number" placeholder="0" name="number" id="bill" />
+            <span><img src="./images/icon-dollar.svg" alt="" /></span>
+          </div>
+        </div>
+
+        <div class="wrapper2">
+          <span>Select Tip %</span>
+          <div class="tip-percentage">
+            <button class="percentage active">5%</button>
+            <button class="percentage">10%</button>
+            <button class="percentage">15%</button>
+            <button class="percentage">25%</button>
+            <button class="percentage">50%</button>
+            <input id="custom" type="number" placeholder="Custom" />
+          </div>
+        </div>
+
+        <div class="wrapper1">
+          <div class="people">
+            <p>Number of People</p>
+            <p class="errorMsg">Can't be zero</p>
+          </div>
+          <div class="input-wrap">
+            <input class="input-box" type="number" placeholder="0" name="number" id="selectPeople" />
+            <span><img src="./images/icon-person.svg" alt="" /></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- -----Right---- -->
+      <div class="right">
+        <div class="wrapper3">
+          <div class="tip">
+            <p>Tip Amount <br /><span>/ person</span></p>
+            <h3 id="tip-amount" class="result">$0.00</h3>
+          </div>
+          <div class="tip">
+            <p>Total <br /><span>/ person</span></p>
+            <h3 id="total" class="result">$0.00</h3>
+          </div>
+          <button type="reset" id="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

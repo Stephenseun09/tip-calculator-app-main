@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Space Mono";
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  margin-block: 2.7rem;
+}
+
+main {
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.left {
+  padding: 20px 30px;
+}
+
+.left .wrapper1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6px;
+  -webkit-margin-before: 15px;
+  margin-block-start: 15px;
+}
+
+.left .wrapper1 label {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+.left .wrapper1 .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+.left .wrapper1 .people .errorMsg {
+  display: none;
+  color: tomato;
+}
+
+.left .wrapper1 .input-wrap {
+  position: relative;
+}
+
+.left .wrapper1 .input-wrap .input-box {
+  background-color: #f4fafa;
+  color: #00494d;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 700;
+  padding: 10px;
+  text-align: inline-end;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.left .wrapper1 .input-wrap .input-box:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.left .wrapper1 .input-wrap .input-box:hover {
+  outline: 2px solid #26c0ab;
+  cursor: pointer;
+}
+
+.left .wrapper1 .input-wrap span {
+  position: absolute;
+  inset-block-start: 16px;
+  inset-inline-start: 10px;
+}
+
+.left .wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6px;
+  -webkit-margin-before: 15px;
+  margin-block-start: 15px;
+}
+
+.left .wrapper2 span {
+  color: #5e7a7d;
+  font-weight: 700;
+}
+
+.left .wrapper2 .tip-percentage {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.left .wrapper2 .percentage {
+  background-color: #00494d;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.left .wrapper2 .percentage:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+
+.left .wrapper2 .active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.left .wrapper2 input {
+  width: 100%;
+  padding: 8px;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 500;
+  text-align: inline-end;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.left .wrapper2 input::-webkit-input-placeholder {
+  color: #5e7a7d;
+  font-weight: 600;
+}
+
+.left .wrapper2 input:-ms-input-placeholder {
+  color: #5e7a7d;
+  font-weight: 600;
+}
+
+.left .wrapper2 input::-ms-input-placeholder {
+  color: #5e7a7d;
+  font-weight: 600;
+}
+
+.left .wrapper2 input::placeholder {
+  color: #5e7a7d;
+  font-weight: 600;
+}
+
+.left .wrapper2 input:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.left .wrapper2 input:hover {
+  outline: 2px solid #26c0ab;
+  cursor: pointer;
+}
+
+.right {
+  padding: 20px 30px;
+}
+
+.right .wrapper3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #00494d;
+}
+
+.right .wrapper3 .tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.right .wrapper3 .tip p {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: white;
+}
+
+.right .wrapper3 .tip p span {
+  color: #5e7a7d;
+}
+
+.right .wrapper3 .tip h3 {
+  color: #26c0ab;
+  font-size: 24px;
+}
+
+.right .wrapper3 button {
+  background-color: #26c0ab;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #00494d;
+  font-size: 16px;
+  font-weight: 900;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.right .wrapper3 button:hover {
+  background-color: #c5e4e7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  header {
+    -webkit-margin-before: 5rem;
+    margin-block-start: 5rem;
+  }
+  main {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main .container .right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  main .container .right .wrapper3 {
+    gap: 40px;
+    -webkit-padding-before: 45px;
+    padding-block-start: 45px;
+  }
+  main .container .right .wrapper3 p {
+    font-size: 16px;
+  }
+  main .container .right .wrapper3 h3 {
+    font-size: 25px;
+  }
+  main .container .right .wrapper3 button {
+    margin-top: 4rem;
+  }
+  main .container .left {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  header {
+    -webkit-margin-before: 5rem;
+    margin-block-start: 5rem;
+  }
+  main {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 10px 0 #73a6ab4f;
+    box-shadow: 0 5px 10px 0 #73a6ab4f;
+  }
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  main .container .right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  main .container .right .wrapper3 {
+    gap: 40px;
+    -webkit-padding-before: 45px;
+    padding-block-start: 45px;
+  }
+  main .container .right .wrapper3 p {
+    font-size: 16px;
+  }
+  main .container .right .wrapper3 h3 {
+    font-size: 30px;
+  }
+  main .container .right .wrapper3 button {
+    margin-top: 4rem;
+  }
+  main .container .left {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  main .container .left .tip-percentage {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=main.css.map */
